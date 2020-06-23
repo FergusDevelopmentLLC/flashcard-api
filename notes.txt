@@ -1,0 +1,33 @@
+https://quizlet.com/
+https://www.youtube.com/watch?v=uvF1XuseZFE#:~:text=The%20Leitner%20Box%20is%20a,need%20to%20make%20one%20already!
+http://www.objgen.com/json/models/fKLKm
+https://blog.usejournal.com/why-byebug-will-be-your-best-friend-when-programming-in-rails-98e06f46bdb6
+
+flashcard[0]
+  question s = 1 x 0 = ?
+  answer s = 0
+flashcard[1]
+  question s = 1 x 1 = ?
+  answer s = 1
+flashcard[2]
+  question s = 1 x 2 = ?
+  answer s = 2
+
+produces:
+
+{
+  "flashcard": [
+    {
+      "question": "1 x 0 = ?",
+      "answer": "0"
+    },
+    {
+      "question": "1 x 1 = ?",
+      "answer": "1"
+    },
+    {
+      "question": "1 x 2 = ?",
+      "answer": "2"
+    }
+  ]
+}
