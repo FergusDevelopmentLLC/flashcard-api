@@ -31,3 +31,47 @@ produces:
     }
   ]
 }
+
+-------------------------------------
+ok, so I want to hit this url:
+
+http://adamweisman.com/flashcards/
+
+with a post request, made up of this json:
+{
+  "question": "1 x 0 = ?",
+  "answer": "0"
+ }
+
+that should map to your POST /flashcards route.
+you save a new flashcard.
+I will send you 100 of these in a loop to build the complete multiplication table set.
+
+Then, I will send another request:
+ie:
+http://adamweisman.com/flashcards?limit=3
+this should return 3 random flashcards from the pool that was saved earlier.
+the url is based on: https://stackoverflow.com/questions/5020704/how-to-design-restful-search-filtering
+(the format of this url to limit the returned number is up for debate.)
+
+The format of the returned flashcards for the url: http://adamweisman.com/flashcards?limit=3 could be:
+
+{
+  "flashcards": [
+    {
+      "question": "1 x 0 = ?",
+      "answer": "0"
+    },
+    {
+      "question": "1 x 1 = ?",
+      "answer": "1"
+    },
+    {
+      "question": "1 x 2 = ?",
+      "answer": "2"
+    }
+  ]
+}
+
+I created a github repo for this and invited you as a collaborator. Github is a good place to keep track of things.
+https://github.com/FergusDevelopmentLLC/flashcard-api
